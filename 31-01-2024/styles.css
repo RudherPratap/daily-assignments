@@ -1,0 +1,29 @@
+.bio{
+  background-color: chartreuse;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.personal h1{
+ 
+  color: crimson;
+}
+.personal{
+  background-color: aqua;
+  border: 3px solid black;
+  margin: 20px;
+  padding: 10px;
+}
+
+.professional h2{
+ 
+  color: crimson;
+}
+.professional{
+  background-color: aquamarine;
+  border: 3px solid black;
+  margin: 20px;
+  padding: 10px;
+}
