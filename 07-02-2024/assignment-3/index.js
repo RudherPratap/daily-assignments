@@ -1,9 +1,4 @@
 
-
-// let end=0;
-
-
-
 function numberGuessing() {
   let randomNumber = Math.floor(Math.random() * (100 - 1 + 1)) + 1;
 
@@ -28,6 +23,7 @@ function numberGuessing() {
       }
       else {
         window.alert(`Correct. It took you ${count} attempts.`);
+        calculateScore(count);
         break;
 
       }
@@ -35,6 +31,22 @@ function numberGuessing() {
   }
   let again = confirm("Want to play again?");
   return again;
+}
+
+function calculateScore(count) {
+  let score = 0;
+
+  if (count <= 6) {
+    score = 10;
+  } else if (count <= 10) {
+    score = 8;
+  } else if (count <= 13) {
+    score = 5;
+  } else {
+    score = 2;
+  }
+  alert(`Your score is: ${score}`);
+
 }
 
 function main() {
