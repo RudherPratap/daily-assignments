@@ -1,11 +1,11 @@
 
-let score = [];
 function numberGuessing() {
   let randomNumber = Math.floor(Math.random() * (100 - 1 + 1)) + 1;
 
   let count = 0;
   let run = true;
 
+  const history_score = [];
 
   while (run) {
     let guess;
@@ -27,8 +27,8 @@ function numberGuessing() {
     }
     else {
       window.alert(`Correct. It took you ${count} attempts.`);
-      score.push(count);
-
+      score(count);
+      showHistory(history_score);
       break;
 
     }
@@ -36,6 +36,23 @@ function numberGuessing() {
   }
   let again = confirm("Want to play again?");
   return again;
+}
+function showHistory(history) {
+  alert(`history: ${history.join(', ')}`);
+}
+function score(count) {
+  let claculatedScore = 0;
+  if (count <= 5) {
+    claculatedScore = 12;
+  } else if (count <= 10) {
+    claculatedScore = 8;
+  } else if (count <= 14) {
+    claculatedScore = 4
+  } else {
+    claculatedScore = 2;
+  }
+
+  alert(`Your score: ${claculatedScore}`);
 }
 
 function main() {
@@ -45,5 +62,4 @@ function main() {
 
   } while (replay);
 }
-console.log(`Scores ${score}`);
 main();
