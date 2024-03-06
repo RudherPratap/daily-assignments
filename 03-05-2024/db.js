@@ -1,18 +1,17 @@
-const mongodb = require("mongodb");
-
-const url = "mongodb://localhost:27017";
+const mongoose = require("mongoose");
 
 let db;
-
 
 async function movie() {
   if (db) {
     return db;
   }
-  const client = new mongodb.MongoClient(url);
   try {
-    await client.connect()
-    db = client.db("movies");
+    const connect = await mongoose.connect("mongodb://localhost:27017/movies", {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+    db = connect.connection;
     return db;
 
   } catch (err) {
