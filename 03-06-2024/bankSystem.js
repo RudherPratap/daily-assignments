@@ -27,7 +27,7 @@ class bankAccount {
 }
 
 class savingAccount extends bankAccount {
-  constructor(accountNo, accountHolder, balance = 0, interestRate = 0.03, withdrawlLimit = 3000) {
+  constructor(accountNo, accountHolder, balance = 0, interestRate = 0.03, withdrawlLimit = 2000) {
     super(accountNo, accountHolder, balance);
     this.interest_Rate = interestRate
     this.withdraw_lLimit = withdrawlLimit
