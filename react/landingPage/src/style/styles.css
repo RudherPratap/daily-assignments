@@ -32,14 +32,16 @@ nav a:hover {
 
 main {
   padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.product-section {
+/* .product-section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-}
+} */
 
 .product-image {
   max-width: 100%;
@@ -69,18 +71,17 @@ button:hover {
   background-color: #45a049; /* Change background color on hover */
 }
 
-.features-section {
+/* .features-section {
   margin-top: 20px;
   display: flex;
   justify-content: center;
-}
+} */
 
 footer {
   background-color: #333;
   color: #fff;
   text-align: center;
   padding: 10px;
-  position: fixed;
   bottom: 0;
   width: 100%;
 }
