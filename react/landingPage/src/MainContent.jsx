@@ -1,14 +1,11 @@
-// MainContent.jsx
 import React, { useState } from 'react';
 import productImage from './assets/dumbblles.jpg'
 
 const MainContent = () => {
   const [quantity, setQuantity] = useState(1);
 
-  // Replace these with the actual product details from the Amazon link
   const productTitle = "AmazonBasics Neoprene Dumbbells";
   const productDescription = "Enhance your workout with high-quality dumbbells";
- // Replace with the actual image URL
 
   return (
     <main>
