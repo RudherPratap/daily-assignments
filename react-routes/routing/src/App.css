@@ -1,0 +1,56 @@
+
+.App {
+  text-align: center;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 10px 0;
+  z-index: 1000; 
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a.activeLink {
+  font-weight: bold;
+}
+
+main {
+  margin-top: 50px;
+  padding-top: 20px; 
+  padding-bottom: 20px; 
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f0f0f0; 
+  padding: 10px 0;
+  z-index: 1000;
+}
+.welcome{
+  margin-bottom: 500px;
+  margin-left: 570px;
+}
+.active{
+  color: red;
+}
